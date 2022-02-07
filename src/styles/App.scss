@@ -1,3 +1,20 @@
-.App {
+@import "Utils";
+
+* {
   margin: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: $font-color;
+}
+
+body {
+  font-size: $font-size;
+  font-family: $primary-font-family;
+  background-color: $primary-color;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
