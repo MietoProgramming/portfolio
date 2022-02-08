@@ -4,13 +4,22 @@ import "../../styles/Contact.scss";
 const Contact = () => {
   return (
     <div className="contactContainer">
-      <div className="icon">
+      <div
+        className="icon"
+        onClick={() => window.open("https://www.linkedin.com/in/kaluzakamil/")}
+      >
         <img src="/linkedin.png" alt="linkedin" />
       </div>
-      <div className="icon">
+      <div
+        className="icon"
+        onClick={() => window.open("https://github.com/MietoProgramming")}
+      >
         <img src="/github.png" alt="github" />
       </div>
-      <div className="icon">
+      <div
+        className="icon"
+        onClick={() => window.open("mailto:kamil.kaluza25@gmail.com")}
+      >
         <img src="/gmail.png" alt="gmail" />
       </div>
       {/* <h1>Contact</h1>

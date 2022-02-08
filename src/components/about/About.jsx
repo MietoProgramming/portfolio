@@ -4,7 +4,7 @@ import "../../styles/About.scss";
 const About = () => {
   return (
     <div className="aboutContainer">
-      <div className="icon">
+      {/* <div className="icon">
         <img src="/passions.png" alt="passion" />
       </div>
       <div className="icon">
@@ -12,11 +12,19 @@ const About = () => {
       </div>
       <div className="icon">
         <img src="/work.png" alt="work" />
+      </div> */}
+      <div className="preview">
+        <div className="iconBubble">
+          <img src="/passions.png" alt="passion" />
+        </div>
+        <div className="descBubble">
+          <h1 id="bubbleTitle">Education</h1>
+          <div className="underline"></div>
+          <p id="bubbleText">
+            My text about my education, university and those things.
+          </p>
+        </div>
       </div>
-      {/* <h1>Contact</h1>
-      <p>GitHub: https://github.com/MietoProgramming</p>
-      <p>LinkedIn: https://www.linkedin.com/in/kaluzakamil/</p>
-      <p>Email: kamil.kaluza25@gmail.com</p> */}
     </div>
   );
 };

@@ -1,0 +1,100 @@
+@import "Utils";
+$cardPosition: -30vh;
+
+.experienceContainer {
+  height: 90vh;
+
+  .expCard {
+    background: $primary-color;
+    box-shadow: 0px 0px 10px 2px $secondary-color;
+    border-radius: 85px;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      height: 2px;
+      background: rgba($secondary-color, 0.5);
+      width: 80%;
+    }
+
+    p {
+      margin: 10%;
+      font-size: 10px;
+
+      li {
+        margin-left: -20px;
+      }
+
+      li::before {
+        content: "";
+        position: relative;
+        right: 15px;
+        top: -5px;
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        box-shadow: 0px 0px 10px 1px rgba($secondary-color, 0.8);
+        border-radius: 50%;
+        color: $primary-color;
+      }
+    }
+
+    &.card1 {
+      top: -100%;
+      z-index: 5;
+    }
+
+    &.card2 {
+      top: -60%;
+      z-index: 4;
+    }
+
+    &.card3 {
+      top: -20%;
+      z-index: 3;
+    }
+
+    &.card4 {
+      top: 20%;
+      z-index: 2;
+    }
+  }
+
+  .expCardBox {
+    position: relative;
+    top: -120vh;
+    z-index: 10;
+    max-width: 550px;
+  }
+  .expCard,
+  .expCardBox {
+    margin: 0px auto;
+  }
+
+  .expCardBig {
+    position: absolute;
+    z-index: 50 !important;
+    top: 15vh !important;
+    height: 80vh;
+    width: 40vw;
+    left: 30vw;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
