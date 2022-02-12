@@ -43,6 +43,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  position: absolute;
+  top: 114vh;
 
   .iconsC {
     opacity: 0.2;

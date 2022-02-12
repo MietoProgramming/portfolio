@@ -15,18 +15,33 @@
     box-shadow: 0px 0px 40px 10px $secondary-color;
     display: flex;
     justify-content: center;
-    transition: 0.1s;
+    transition: 0.1s, opacity 0.5s ease;
 
     &:hover {
       transform: scale(1.05);
       box-shadow: 0px 0px 60px 1px rgba($secondary-color, 0.9);
     }
+
+    &.inactive {
+      opacity: 0;
+    }
   }
 
   .preview {
     height: 90vh;
-    position: relative;
+    position: absolute;
     top: 20px;
+    z-index: -1;
+
+    &.active {
+      z-index: 10;
+
+      .iconBubble,
+      .descBubble {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
 
     .iconBubble,
     .descBubble {
@@ -34,6 +49,8 @@
       border-radius: 50%;
       position: relative;
       margin-top: 2vh;
+      transform: translateY(20%);
+      opacity: 0;
     }
     .iconBubble {
       box-shadow: -10px 0px 20px 1px $secondary-color;
@@ -45,6 +62,7 @@
       align-items: center;
       justify-content: center;
       z-index: 5;
+      transition: all 0.8s ease;
 
       img {
         height: 70%;
@@ -54,8 +72,8 @@
 
     .descBubble {
       height: 70vh;
-      width: 55vh;
-      padding: 2vh;
+      width: 20vw;
+      padding: 2vh calc(2vh + 100px);
       top: -30vh;
       right: -10vw;
       display: flex;
@@ -64,6 +82,8 @@
       align-items: center;
       box-shadow: 0px 0px 40px 10px $secondary-color;
       z-index: 4;
+      transition: all 0.6s ease;
+      font-size: 1.05em;
 
       h1 {
         margin-top: 10vh;
