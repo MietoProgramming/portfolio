@@ -10,11 +10,51 @@
 body {
   font-size: $font-size;
   font-family: $primary-font-family;
-  background-color: $primary-color;
+  background-color: transparent;
   overflow-x: hidden;
   scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+#animatedBackground {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  z-index: -1;
+  height: calc(122vh + 100px);
+  width: calc(100vw + 400px);
+  background-repeat: repeat;
+  background-size: cover;
+
+  background: -webkit-repeating-linear-gradient(
+    45deg,
+    #000000 0%,
+    #00008a 2%,
+    #000070 2%,
+    #000000 6%
+  );
+  background: -o-repeating-linear-gradient(
+    45deg,
+    #000000 0%,
+    #00008a 2%,
+    #000070 2%,
+    #000000 6%
+  );
+  background: -moz-repeating-linear-gradient(
+    45deg,
+    #000000 0%,
+    #00008a 2%,
+    #000070 2%,
+    #000000 6%
+  );
+  background: repeating-linear-gradient(
+    45deg,
+    #000000 0%,
+    #00008a 2%,
+    #000070 2%,
+    #000000 6%
+  );
 }

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
+import AnimatedBackground from "./AnimatedBackground";
 import "../styles/Layout.scss";
 
 const Layout = () => {
@@ -31,6 +32,7 @@ const Layout = () => {
       </header>
       <main>
         <Outlet />
+        <AnimatedBackground />
       </main>
       <footer>
         <div className="col1">

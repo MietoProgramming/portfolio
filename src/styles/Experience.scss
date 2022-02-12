@@ -3,6 +3,7 @@ $cardPosition: -30vh;
 
 .experienceContainer {
   height: 90vh;
+  backdrop-filter: blur(5px);
 
   .expCard {
     background: $primary-color;
