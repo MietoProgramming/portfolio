@@ -21,7 +21,7 @@ const SilderComp = () => {
         <div>
           <div className="card">
             <div className="cardImgBoxVer">
-              <img src="./pic1.png" alt="" />
+              <img src="./portfolio/pic1.png" alt="" />
             </div>
             <div className="descriptionBox">
               <p>
@@ -34,7 +34,7 @@ const SilderComp = () => {
         <div>
           <div className="card">
             <div className="cardImgBoxHor">
-              <img src="./pic2.png" alt="" />
+              <img src="./portfolio/pic2.png" alt="" />
             </div>
             <div className="descriptionBox">
               <p>Ready for new challanges...</p>
@@ -45,7 +45,7 @@ const SilderComp = () => {
         <div>
           <div className="card">
             <div className="cardImgBoxVer">
-              <img src="./pic3.png" alt="" />
+              <img src="./portfolio/pic3.png" alt="" />
             </div>
             <div className="descriptionBox">
               <p>Always aiming high...</p>
@@ -56,7 +56,7 @@ const SilderComp = () => {
         <div>
           <div className="card">
             <div className="cardImgBoxHor">
-              <img src="./pic4.png" alt="" />
+              <img src="./portfolio/pic4.png" alt="" />
             </div>
             <div className="descriptionBox">
               <p>Focused on hard work....</p>
@@ -67,7 +67,7 @@ const SilderComp = () => {
         <div>
           <div className="card">
             <div className="cardImgBoxVer">
-              <img src="./pic5.png" alt="" />
+              <img src="./portfolio/pic5.png" alt="" />
             </div>
             <div className="descriptionBox">
               <p>To become the best version of himself.</p>
