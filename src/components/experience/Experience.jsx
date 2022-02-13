@@ -113,7 +113,7 @@ const Experience = () => {
       </div>
 
       <div className="expCardBox">
-        <img src="/expPocket.png" alt="pocket" />
+        <img src="./expPocket.png" alt="pocket" />
       </div>
     </div>
   );

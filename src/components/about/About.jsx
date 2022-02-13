@@ -31,7 +31,7 @@ const About = () => {
           setShowIcons(false);
         }}
       >
-        <img src="/passions.png" alt="passion" />
+        <img src="./passions.png" alt="passion" />
       </div>
       <div
         className={showIcons ? "icon" : "icon inactive"}
@@ -40,7 +40,7 @@ const About = () => {
           setShowIcons(false);
         }}
       >
-        <img src="/education.png" alt="education" />
+        <img src="./education.png" alt="education" />
       </div>
       <div
         className={showIcons ? "icon" : "icon inactive"}
@@ -49,12 +49,12 @@ const About = () => {
           setShowIcons(false);
         }}
       >
-        <img src="/work.png" alt="work" />
+        <img src="./work.png" alt="work" />
       </div>
 
       <div className={dialogOneShow ? "preview active" : "preview"}>
         <div className="iconBubble">
-          <img src="/passions.png" alt="passion" />
+          <img src="./passions.png" alt="passion" />
         </div>
         <div className="descBubble">
           <h1 id="bubbleTitle">Passion</h1>
@@ -73,7 +73,7 @@ const About = () => {
 
       <div className={dialogTwoShow ? "preview active" : "preview"}>
         <div className="iconBubble">
-          <img src="/education.png" alt="edication" />
+          <img src="./education.png" alt="edication" />
         </div>
         <div className="descBubble">
           <h1 id="bubbleTitle">Education</h1>
@@ -91,7 +91,7 @@ const About = () => {
 
       <div className={dialogThreeShow ? "preview active" : "preview"}>
         <div className="iconBubble">
-          <img src="/work.png" alt="work" />
+          <img src="./work.png" alt="work" />
         </div>
         <div className="descBubble">
           <h1 id="bubbleTitle">Work</h1>
