@@ -25,7 +25,7 @@ const Layout = () => {
               <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/experience">Experience</Link>
+              <Link to="/">Experience</Link>
             </li>
           </ul>
         </nav>
@@ -48,7 +48,7 @@ const Layout = () => {
               <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/experience">Experience</Link>
+              <Link to="/">Experience</Link>
             </li>
           </ul>
         </div>
