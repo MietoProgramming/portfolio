@@ -17,7 +17,7 @@ const Contact = () => {
         onMouseLeave={() => setDialogOneShow("dialogBox")}
         onMouseEnter={() => setDialogOneShow("dialogBox active")}
       >
-        <img src="./portfolio/linkedin.png" alt="linkedin" />
+        <img src="./linkedin.png" alt="linkedin" />
       </div>
       <div className={dialogTwoShow}>
         <p>MietoProgramming</p>
@@ -28,7 +28,7 @@ const Contact = () => {
         onMouseLeave={() => setDialogTwoShow("dialogBox")}
         onMouseEnter={() => setDialogTwoShow("dialogBox active")}
       >
-        <img src="./portfolio/github.png" alt="github" />
+        <img src="./github.png" alt="github" />
       </div>
       <div className={dialogThreeShow}>
         <p>kamil.kaluza25@gmail.com</p>
@@ -39,7 +39,7 @@ const Contact = () => {
         onMouseLeave={() => setDialogThreeShow("dialogBox")}
         onMouseEnter={() => setDialogThreeShow("dialogBox active")}
       >
-        <img src="./portfolio/gmail.png" alt="gmail" />
+        <img src="./gmail.png" alt="gmail" />
       </div>
     </div>
   );
