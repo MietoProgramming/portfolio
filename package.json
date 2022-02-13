@@ -1,6 +1,6 @@
 {
   "name": "MietoProgrammingPortfolio",
-  "homepage": "https://mietoprogramming.github.io/portfolio/",
+  "homepage": "https://mietoprogramming.github.io/portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
