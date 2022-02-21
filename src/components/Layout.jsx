@@ -57,13 +57,13 @@ const Layout = () => {
           <p>Copyright by Kamil Kałuża</p>
           <p className="iconsC">Icons from Icons8.com</p>
           <div className="icons">
-            <a href="https://github.com/MietoProgramming">
+            <a href="https://github.com/MietoProgramming" target="_blank">
               <img src="./github.png" alt="github" />
             </a>
-            <a href="https://www.linkedin.com/in/kaluzakamil/">
+            <a href="https://www.linkedin.com/in/kaluzakamil/" target="_blank">
               <img src="./linkedin.png" alt="linkedin" />
             </a>
-            <a href="kamil.kaluza25@gmail.com">
+            <a href="mailto:kamil.kaluza25@gmail.com" target="_blank">
               <img src="./gmail.png" alt="gmail" />
             </a>
           </div>
