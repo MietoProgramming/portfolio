@@ -1,9 +1,19 @@
 @import "Utils";
 
+@function slide($i) {
+  @return $i * 100;
+}
+
 .projectsContainer {
   padding: 2% 0%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @for $i from 1 through 4 {
+    .d-#{$i} {
+      animation-delay: $i * 100ms !important;
+    }
+  }
 
   .projectCard {
     display: flex;
@@ -14,6 +24,9 @@
     min-height: 35vh;
     background: $primary-color;
     box-shadow: 0px 0px 40px 10px $secondary-color;
+    animation: 0.5s ease-out slide;
+    animation-fill-mode: forwards;
+    opacity: 0;
 
     & > * {
       margin-bottom: 10px;
@@ -56,5 +69,15 @@
       border-radius: 50%;
       color: $primary-color;
     }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

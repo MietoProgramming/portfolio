@@ -1,54 +1,11 @@
 import React, { useState } from "react";
 import "../../styles/Projects.scss";
-import {
-  useTransition,
-  useSpring,
-  useChain,
-  config,
-  animated,
-  useSpringRef,
-} from "react-spring";
-import data from "../../data/projectsData";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  // const [open, set] = useState(true);
-
-  const springApi = useSpringRef();
-  const { move } = useSpring({
-    ref: springApi,
-    config: config.stiff,
-    from: { y: -100 },
-    to: {
-      y: 0,
-    },
-  });
-
-  const transApi = useSpringRef();
-  const transition = useTransition(data, {
-    ref: transApi,
-    trail: 400 / data.length,
-    from: { opacity: 0.5 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0.5 },
-  });
-
-  useChain([springApi, transApi], [0, 0.5]);
-
   return (
     <div className="projectsContainer">
-      {/* {transition((style, item) => {
-        <animated.div className="projectCard" style={{ ...style }}>
-          <h2>item.title</h2>
-          <div className="underline"></div>
-          <p>item.description</p>
-          <ul>
-            {item.techStack.map((tech) => {
-              return <li>tech</li>;
-            })}
-          </ul>
-        </animated.div>;
-      })} */}
-      <div className="projectCard">
+      <div className="projectCard d-1">
         <h2>miniblog-react</h2>
         <div className="underline"></div>
         <p>
@@ -62,7 +19,7 @@ const Projects = () => {
           <li>APIs</li>
         </ul>
       </div>
-      <div className="projectCard">
+      <div className="projectCard d-2">
         <h2>cryptoexchange</h2>
         <div className="underline"></div>
         <p>
@@ -86,7 +43,7 @@ const Projects = () => {
           <li>React</li>
         </ul>
       </div>
-      <div className="projectCard">
+      <div className="projectCard d-3">
         <h2>covidboard</h2>
         <div className="underline"></div>
         <p>Web app to fetching and showing data about covid-19.</p>
@@ -96,7 +53,7 @@ const Projects = () => {
           <li>Country flag API (countryflags.io)</li>
         </ul>
       </div>
-      <div className="projectCard">
+      <div className="projectCard d-4">
         <h2>MojitoTube Platform</h2>
         <div className="underline"></div>
         <p>
