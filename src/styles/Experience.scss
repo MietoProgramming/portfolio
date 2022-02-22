@@ -5,6 +5,27 @@ $cardPosition: -30vh;
   height: 90vh;
   backdrop-filter: blur(5px);
 
+  &.showCards {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-around;
+    align-items: center;
+
+    .expCard {
+      position: static;
+      height: 80vh;
+      width: 20vw;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .expCardBox {
+      display: none;
+    }
+  }
+
   .expCard {
     background: $primary-color;
     box-shadow: 0px 0px 10px 2px $secondary-color;
@@ -15,6 +36,11 @@ $cardPosition: -30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: 1s ease-out slideDown;
+    animation-fill-mode: forwards;
+    transition: all ease-out 1s;
+    opacity: 0;
+    transform: translateY(-20%);
 
     h1 {
       margin-top: 20px;
@@ -50,24 +76,12 @@ $cardPosition: -30vh;
       }
     }
 
-    &.card1 {
-      top: -100%;
-      z-index: 5;
-    }
-
-    &.card2 {
-      top: -60%;
-      z-index: 4;
-    }
-
-    &.card3 {
-      top: -20%;
-      z-index: 3;
-    }
-
-    &.card4 {
-      top: 20%;
-      z-index: 2;
+    @for $i from 1 through 4 {
+      &.card#{$i} {
+        top: -140% + 40% * $i;
+        z-index: 6 - $i;
+        animation-delay: $i * 100ms;
+      }
     }
   }
 
@@ -76,6 +90,9 @@ $cardPosition: -30vh;
     top: -120vh;
     z-index: 10;
     max-width: 550px;
+    animation: 0.8s ease-out slideUp;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
   .expCard,
   .expCardBox {
@@ -97,5 +114,18 @@ $cardPosition: -30vh;
     p {
       font-size: 1.2rem;
     }
+  }
+}
+
+@keyframes slideDown {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  100% {
+    opacity: 1;
   }
 }
