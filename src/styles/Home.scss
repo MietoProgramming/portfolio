@@ -79,3 +79,38 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .home {
+    .card {
+      width: 70vw !important;
+      height: 70vh;
+      min-width: 700px;
+      min-height: 80vh;
+      max-height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      padding: 40px 0px;
+      margin: 0px 30px;
+
+      .cardImgBoxVer {
+        max-width: 470px;
+        img {
+          height: 400px;
+        }
+      }
+
+      .cardImgBoxHor {
+        height: 300px;
+        width: 470px;
+      }
+      .cardImgBoxHor,
+      .cardImgBoxVer,
+      .descriptionBox {
+        margin: 50px 30px;
+      }
+    }
+  }
+}

@@ -46,3 +46,9 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .contactContainer {
+    flex-direction: column;
+  }
+}
