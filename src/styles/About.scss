@@ -99,3 +99,28 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .aboutContainer {
+    flex-direction: column;
+
+    .preview {
+      height: 90vh;
+      position: absolute;
+      top: 20px;
+      z-index: -1;
+
+      .iconBubble {
+        top: 70vh;
+      }
+
+      .descBubble {
+        height: 90vh;
+        width: 95vw;
+        max-width: 250px;
+        font-size: 1em;
+        padding: 20px 40px;
+      }
+    }
+  }
+}

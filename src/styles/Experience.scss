@@ -15,6 +15,7 @@ $cardPosition: -30vh;
       position: static;
       height: 80vh;
       width: 20vw;
+      min-width: 200px;
 
       p {
         font-size: 18px;
@@ -127,5 +128,19 @@ $cardPosition: -30vh;
 @keyframes slideUp {
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .experienceContainer {
+    &.showCards {
+      flex-direction: column;
+      overflow-y: scroll;
+      .expCard {
+        width: 80vw;
+        height: max-content;
+        min-height: 60vh;
+      }
+    }
   }
 }

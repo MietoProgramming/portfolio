@@ -5,9 +5,10 @@
 }
 
 .projectsContainer {
-  padding: 2% 0%;
+  padding: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100vw;
 
   @for $i from 1 through 4 {
     .d-#{$i} {
@@ -79,5 +80,17 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .projectsContainer {
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+    max-height: 110vh;
+
+    .projectCard {
+      margin: 3vh 8vw;
+    }
   }
 }
